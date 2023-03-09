@@ -7,7 +7,27 @@
     <style>
       table {
         font-size: 75%;
+        border-collapse: collapse;
       }
+      th,td {
+        padding: 0.3em;
+      }
+      thead th:nth-child(2), thead th:nth-child(3), tbody td:nth-child(2), tbody td:nth-child(3),tfoot th {
+        text-align: right;
+      }
+      thead th:nth-child(4), thead th:nth-child(1), tbody th {
+        text-align: left;
+      }
+      caption,tfoot th,tfoot td {
+        border-bottom: 1px solid #999;
+      }
+      tfoot th,tfoot td {
+        border-top: 1px solid #999;
+      }
+      tbody tr:nth-child(odd) {
+        background: #eee;
+      }
+      
     </style>
 
   </head>
